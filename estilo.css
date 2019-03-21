@@ -1,0 +1,51 @@
+@utf-8;
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3%;
+}
+fieldset legend{
+    color: blueviolet;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    border-color: blueviolet;
+}
+ input{
+     background-color: azure;
+     font-size: 13pt;
+ }
+
+ input:hover{
+    background-color: bisque;
+ }
+
+label{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sexo{
+    width: 150px;
+    position: relative;
+    top: 15px;
+}
+
+#residencia{
+    position: relative;
+    top: 25px;
+}
+
+#ccliente{
+    width: 500px;
+}
+
+.btncadastro{
+background: blueviolet;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+height:auto;
+min-height:30px;
+border-radius:8px;
+}

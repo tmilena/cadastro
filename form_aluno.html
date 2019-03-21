@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<head>
+	<title>Cadastro de Alunos</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<form id="aluno" action="mailto:1infovr2018@gmail.com" method="POST">
+		<fieldset id="aluno">
+			<legend>Cadastro de Alunos</legend>
+				<label for="cnome">Nome Completo:</label>
+				<input type="text" id="nome" name="nome" size="68" maxlength="30" placeholder="Digite o nome completo do aluno"><br/>
+				<fieldset> <legend>Sexo: </legend>
+					<input type="radio" id="cfem" name="sexo" value="F"> 
+					<label for="csexo">Feminino</label>
+					<input type="radio" id="cmasc" name="sexo" value="M">
+					<label for="csexo">Masculino</label>
+				</fieldset><br/>
+					<label for="cnascimento">Data de Nascimento:</label>
+					<input type="date" id="nascimento" name="dtnasc"> <br/><br/>
+					<label for="ccidade">Cidade:</label>
+					<input type="text" id="cidade" size="50" maxlength="30" placeholder="Cidade de Residência">
+					<label for="cestado">Estado: </label>
+						<select id="estado" name="estado">
+							<optgroup label="Região Norte">Região Norte</optgroup>
+								<option value="AC">Acre</option>
+								<option value="AM">Amazonas</option>
+								<option value="AP">Amapá</option>
+								<option value="PA">Pará</option>
+								<option value="RO">Rondônia</option>
+								<option value="RR">Roraima</option>
+								<option value="TO">Tocantins</option>
+							<optgroup label="Região Nordeste">Região Nordeste</optgroup>
+								<option value="AL">Alagoas</option>
+								<option value="BA">Bahia</option>
+								<option value="CE">Ceará</option>
+								<option value="MA">Maranhão</option>
+								<option value="PB">Paraíba</option>
+								<option value="PE">Pernambuco</option>
+								<option value="PI">Piauí</option>
+								<option value="RN">Rio Grande do Norte</option>
+								<option value="SE">Sergipe</option>
+							<optgroup label="Centro-Oeste">Centro-Oeste</optgroup>			
+								<option value="DF">Distrito Federal</option>
+								<option value="GO">Goiás</option>
+								<option value="MS">Mato Grosso do Sul</option>
+								<option value="MT">Mato Grosso</option>
+							<optgroup label="Sudeste">Sudeste</optgroup>
+								<option value="ES">Espirito Santo</option>	
+								<option value="MG">Minas Gerais</option>
+								<option value="RJ">Rio de Janeiro</option>
+								<option value="SP">São Paulo</option>
+							<optgroup label="Sul">Sul</optgroup>
+								<option value="PR">Paraná</option>
+								<option value="RS">Rio Grande do Sul</option>
+								<option value="SC">Santa Catarina</option>	
+						</select>
+		</fieldset>
+		<fieldset>
+			<legend id="cfiliacao">Filiação</legend>
+				<label for="cpai">Pai:</label>
+				<input type="text" id="cfiliacao" name="pai" size="70" maxlength="30" placeholder="Informe o nome completo do Pai"><br/><br/>
+				<label for="cmae">Mãe:</label>
+				<input type="text" id="mae" name="filiacao" size="69" maxlength="30" placeholder="Informe o nome completo da Mãe">
+		</fieldset>
+			<fieldset>
+				<legend id="endereco">Endereço:</legend>
+					<label for="cendereco">Logradouro: </label>
+					<input type="text" id="cendereco" name="endereco" size="40" maxlength="40" placeholder="Informe o Endereço Completo">
+					<label for="cnumero">Número:</label>
+					<input type="number" id="cnumero" name="numero" size="4" maxlength="6" placeholder="9999"><br/><br/>
+					<label for="compl">Complemento:</label>
+					<input type="text" id="compl" name="complemento" size="30" maxlength="30" placeholder="Informe o complemento">
+					<label for="cbairro">Bairro:</label>
+					<input type="text" id="cbairro" name="bairro" size="20" maxlength="10" placeholder="Informe o bairro"><br/><br/>
+					<label for="ccep">CEP:</label>
+					<input type="text" id="ccep" name="cep" size="18" maxlength="10" placeholder="Informe o CEP">
+					<label for="email"> Email</label>
+					<input type="email" value=" " placeholder="nome@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Preencha o campo com um email válido."> <br/><br/>
+					<label for="telfixo">Telefone fixo:</label>
+					<input type="tel" id="ctelfixo" name="telfixo"size="15" maxlength="12" placeholder="(00) 0000-0000">
+					<label for="celular">Celular:</label>
+					<input type="tel" id="ccelular" name="celular"size="15" maxlength="12" placeholder="(00) 0000-0000"> <br/><br/>
+					<input type="submit" value="Cadastrar"> 
+				</fieldset>
+	</form>
+</body>
+
+</html>
